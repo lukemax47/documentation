@@ -126,7 +126,8 @@ new application encryption key.
 
 ``` bash
 cp .env.example .env
-composer install --no-dev --optimize-autoloader
+sudo composer install --no-dev --optimize-autoloader
+# `yes` to bypass the warning about running as root.
 
 # Only run the command below if you are installing this Panel for
 # the first time and do not have any Pterodactyl Panel data in the database.
